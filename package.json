@@ -1,5 +1,5 @@
 {
-  "name": "smsauto",
+  "name": "@jr551/smsauto",
   "version": "1.0.0",
   "description": "Playwright wrapper that drives router SMS UI via an HTTP endpoint.",
   "main": "src/server.js",
