@@ -1,6 +1,6 @@
 # SMSAuto
 
-![SMSAuto Application](./image.png)
+![SMSAuto Application](https://raw.githubusercontent.com/jr551/SMS-SwaggerPlaywrightWrapper/main/image.png)
 
 Playwright wrapper with Swagger UI for AliExpress 4G routers that automates SMS sending/receiving via the router's web interface.
 
