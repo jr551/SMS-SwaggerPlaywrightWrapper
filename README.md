@@ -1,6 +1,6 @@
 # SMSAuto
 
-![AliExpress 4G Router](https://ae-pic-a1.aliexpress-media.com/kf/S78e4ae41f4a142b98311242fb634c5873.jpg_960x960q75.jpg_.avif)
+![SMSAuto Application](./image.png)
 
 Playwright wrapper with Swagger UI for AliExpress 4G routers that automates SMS sending/receiving via the router's web interface.
 
@@ -100,3 +100,7 @@ The Swagger UI provides:
 - Request/response examples
 - Authentication setup
 - Full endpoint documentation
+
+---
+
+![AliExpress 4G Router](https://ae-pic-a1.aliexpress-media.com/kf/S78e4ae41f4a142b98311242fb634c5873.jpg_960x960q75.jpg_.avif)
