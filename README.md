@@ -23,7 +23,7 @@ Playwright wrapper with Swagger UI for AliExpress 4G routers that automates SMS 
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `ROUTER_URL` | Yes | `http://host.docker.internal:80` | AliExpress 4G router web UI URL |
+| `ROUTER_URL` | Yes | `http://192.168.0.1:80` | AliExpress 4G router web UI URL |
 | `ROUTER_USER` | No | `admin` | Router login username |
 | `ROUTER_PASS` | No | `admin` | Router login password |
 | `INBOX_CHECK_MS` | No | `120000` | Inbox check interval (ms) |
