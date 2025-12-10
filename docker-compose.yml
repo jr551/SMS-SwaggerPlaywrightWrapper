@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  smsauto:
+    build: .
+    container_name: smsauto
+    restart: unless-stopped
+    ports:
+      - "3324:3324"
+    environment:
+      # Router connection - container reaches host via extra_hosts
+      - ROUTER_URL=${ROUTER_URL:-http://your-router-ip}
+      - ROUTER_USER=${ROUTER_USER:-admin}
+      - ROUTER_PASS=${ROUTER_PASS:-admin}
+      # API Key
+      - API_KEY=${API_KEY:-changeme}
+      # Database path (for persistence)
+      - DB_PATH=/app/data/smsauto.db
+      # Polling intervals
+      - QUEUE_POLL_MS=0
+      - INBOX_CHECK_MS=120000
+      # Daily outbox clear hour (UTC)
+      - OUTBOX_CLEAR_HOUR=3
+      - PORT=3324
+    volumes:
+      # Persist the SQLite database
+      - smsauto-data:/app/data
+    extra_hosts:
+      # This allows container to reach LAN IPs via host
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3324/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  smsauto-data:

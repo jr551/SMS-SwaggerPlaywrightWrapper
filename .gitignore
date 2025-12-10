@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log*
+.DS_Store
+.env
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+smsauto.db

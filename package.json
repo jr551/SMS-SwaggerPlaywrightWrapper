@@ -1,0 +1,17 @@
+{
+  "name": "smsauto",
+  "version": "1.0.0",
+  "description": "Playwright wrapper that drives router SMS UI via an HTTP endpoint.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "playwright": "^1.57.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6"
+  }
+}
