@@ -1,4 +1,4 @@
-# SMSAuto
+# SMS-SwaggerPlaywrightWrapper ('SMSAuto')
 
 ![SMSAuto Application](https://raw.githubusercontent.com/jr551/SMS-SwaggerPlaywrightWrapper/main/image.png)
 
